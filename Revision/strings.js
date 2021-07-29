@@ -23,8 +23,10 @@ let newChar = templateString.charAt(10);
 console.log(newChar);
 
 // to upper Case, lower case
-console.log(newChar.toUpperCase());
-console.log(newChar.toLowerCase());
+let upperCaseString = newChar.toUpperCase();
+console.log(upperCaseString);
+let lowerCaseString = newChar.toLowerCase();
+console.log(lowerCaseString);
 
 // slice and substring are same
 let subslice = templateString.slice(2, 5);
