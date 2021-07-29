@@ -40,6 +40,3 @@ console.log("idx", idx);
 // includes -> it check if present or not
 let isPresent = arr.includes(5);
 // an element is inside an array
-
-
-
