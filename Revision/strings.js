@@ -34,3 +34,6 @@ console.log(subslice);
 let arrString = templateString.split("a");
 console.log(arrString);
 
+// join on the basis of delimeter
+let outputString = arrString.join("$");
+console.log(outputString);
