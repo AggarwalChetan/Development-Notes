@@ -25,4 +25,18 @@ fs.unlinkSync("abc.txt");
 console.log("file removed");
 
 
+// **********Directory******************
 
+// create
+fs.mkdirSync("myDirectory");
+
+// delete
+fs.rmdirSync("myDirectory");
+
+// directory -> list of files on that path 
+let address = "C:\\Users\\chetaagg\\Desktop\\Dev\\Module_1_FS";
+let content = fs.readdirSync(address);
+
+// to check if the path exists or not
+let doesExist = fs.existsSync("fs1.js");
+console.log("This path exists ? ", doesExist);
