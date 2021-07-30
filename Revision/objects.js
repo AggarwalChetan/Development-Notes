@@ -44,4 +44,24 @@ cap.sayHi();
 // 1. we have to access the key that has space in it
 // 2. key is of type number
 console.log("last Name", cap["last Name"]);
-console.log("10 value", cap["10"]);
+console.log("10 value", cap[10]);
+
+
+// use case
+// square bracket -> variable
+// variable value -> get -> matching
+let varName = 10;
+console.log("value is", cap[varName]);
+varName = "address";
+console.log("value is ", cap[varName]);
+
+
+// loop over an object
+for(let key in cap){
+    console.log(key, ":", cap[key]);
+}
+
+
+
+
+
