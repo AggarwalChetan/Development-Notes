@@ -62,6 +62,13 @@ for(let key in cap){
 }
 
 
+// not found -> ?? --> undefined is output
+console.log(cap.abc)
 
-
-
+// set, update and delete
+// create
+cap.movies = ["first avenger", "civil war"];
+// update
+cap.age = 45;
+// delete 
+delete cap.friends;
