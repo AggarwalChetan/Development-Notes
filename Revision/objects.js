@@ -38,3 +38,10 @@ console.log("city", cap.address.city);
 
 // method call
 cap.sayHi();
+
+// access way -> [] operator
+// whenever
+// 1. we have to access the key that has space in it
+// 2. key is of type number
+console.log("last Name", cap["last Name"]);
+console.log("10 value", cap["10"]);
