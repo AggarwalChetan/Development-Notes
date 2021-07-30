@@ -40,3 +40,22 @@ let content = fs.readdirSync(address);
 // to check if the path exists or not
 let doesExist = fs.existsSync("fs1.js");
 console.log("This path exists ? ", doesExist);
+
+
+// path belongs to a directory or file
+let statsOfPath = fs.lstatSync("dir1");
+console.log("stats", statsOfPath);
+
+// if a path is of file or not 
+console.log("isFile? ", statsOfPath.isFile());
+
+// if a path is of directory or not
+console.log("isDirectory", statsOfPath.isDirectory());
+
+
+// copy
+// firstParam -> srcFilePath -> path of file from which content to be copied
+// secondParam -> destPath -> path of the file into which you want to copy the content
+let srcFilePath = "";
+let destFilePath = "";
+fs.copyFileSync(srcFilePath, destFilePath);
