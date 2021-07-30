@@ -3,6 +3,7 @@
 // values -> valid type
 // object -> key : value pair
 // object create
+// No order
 
 let obj = {};
 
