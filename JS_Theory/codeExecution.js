@@ -14,15 +14,25 @@
 
 //Execution Context -> code + Environment(global) + JS(this)
 // Every code inside Js run in an EC
+
 // There are 2 phases inside an EC
 // 1. Creation phase
-    // memory allocate
+
+    //a.  memory allocate -> hoisting
         // variables -> undefined
         // function -> memory allocate
 
+    //b. 
+
+
 // 2. Code Execution
     // left to right and top to bottom execution
+    // default -> global Execution context
+    // NEW EC -> is only created when a function is called
 
+
+// function call -> NEW EC
+// function execution finish -> variables of that fn will be destroyed
 console.log("line number", a);
 console.log("line number", b);
 var a;
@@ -33,9 +43,8 @@ console.log(a);
 console.log(b);
 fn();
 function fn(){
-    var p = 10;
-    console.log("Thank You for calling Me", p);
+    console.log("line number 55", a);
+    var a = 10;
+    console.log("Thank You for calling Me", a);
 }
-    
 fn();
-
